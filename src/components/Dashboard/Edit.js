@@ -6,8 +6,7 @@ const Edit = ({ employees, selectedEmployee, setEmployees, setIsEditing }) => {
 
   const [studentName, setStudentName] = useState(selectedEmployee.studentName);
   const [teacherName, setTeacherName] = useState(selectedEmployee.teacherName);
-  // const [email, setEmail] = useState(selectedEmployee.email);
-  // const [salary, setSalary] = useState(selectedEmployee.salary);
+
   const [date, setDate] = useState(selectedEmployee.date);
 
   const handleUpdate = e => {
@@ -26,9 +25,6 @@ const Edit = ({ employees, selectedEmployee, setEmployees, setIsEditing }) => {
       id,
       studentName,
       teacherName,
-      // email,
-      // salary,
-      date,
     };
 
     for (let i = 0; i < employees.length; i++) {
@@ -71,22 +67,8 @@ const Edit = ({ employees, selectedEmployee, setEmployees, setIsEditing }) => {
           value={teacherName}
           onChange={e => setTeacherName(e.target.value)}
         />
-        {/* <label htmlFor="email">Email</label>
-        <input
-          id="email"
-          type="email"
-          name="email"
-          value={email}
-          onChange={e => setEmail(e.target.value)}
-        /> */}
-        {/* <label htmlFor="salary">Salary ($)</label>
-        <input
-          id="salary"
-          type="number"
-          name="salary"
-          value={salary}
-          onChange={e => setSalary(e.target.value)}
-        /> */}
+       
+       
         <label htmlFor="date">Date</label>
         <input
           id="date"

@@ -5,11 +5,7 @@ const Table = ({ employees, handleEdit, handleDelete }) => {
     employee.id = i + 1;
   });
 
-  // const formatter = new Intl.NumberFormat('en-US', {
-  //   style: 'currency',
-  //   currency: 'USD',
-  //   minimumFractionDigits: null,
-  // });
+
 
   return (
     <div className="contain-table">
@@ -19,8 +15,6 @@ const Table = ({ employees, handleEdit, handleDelete }) => {
             <th>No.</th>
             <th>Student Name</th>
             <th>Teacher Name</th>
-            {/* <th>Email</th> */}
-            {/* <th>Salary</th> */}
             <th>Date</th>
             <th colSpan={2} className="text-center">
               Actions
@@ -34,8 +28,6 @@ const Table = ({ employees, handleEdit, handleDelete }) => {
                 <td>{i + 1}</td>
                 <td>{employee.studentName}</td>
                 <td>{employee.teacherName}</td>
-                {/* <td>{employee.email}</td> */}
-                {/* <td>{formatter.format(employee.salary)}</td> */}
                 <td>{employee.date} </td>
                 <td className="text-right">
                   <button
