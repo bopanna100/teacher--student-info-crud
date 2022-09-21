@@ -13,7 +13,7 @@ const Add = ({ employees, setEmployees, setIsAdding }) => {
       return Swal.fire({
         icon: 'error',
         title: 'Error!',
-        text: 'All fields are required.',
+        text:'All fields are required.',
         showConfirmButton: true,
       });
     }
